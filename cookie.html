@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<body>
+    
+</body>
+</html>
+<script>
+    // var cc = {"age":1};
+    // console.log(cc.hasOwnProperty('name'));
+    // console.log(cc.toString());
+    console.log(new Object());
+
+    function Person(){
+        this.name = 1
+    }
+
+    Person.prototype.name = 2;
+
+    var p = new Person();
+
+    console.log(p.toLocaleString('name'))    //检测是否可枚举的属性---也就是是否是静态属性
+
+</script>
